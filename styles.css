@@ -49,9 +49,37 @@ header p{
     font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 700;
 }
-p.question{
+.q-and-b{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-one, .faq-two, .faq-three, .faq-four{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 100%;
+}
+.question{
     font-weight: 600;
     font-size: 1.25rem;
+    color: color-mix(in srgb, black 95%, white );
+    transition: 1s;
+}
+.answer{
+    font-size: 1.1rem;
+    color: var(--dark-purple);
+}
+button{
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+button svg{
+    width: 100%;
 }
 div.attribution{
     position: absolute;
